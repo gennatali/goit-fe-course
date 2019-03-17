@@ -81,11 +81,13 @@ a:hover {
 }
 
   .title_main::after {
+    margin-left: 480px;
+    display: block;
     content: '';
     background-color: rgb(26, 188, 156);
-    position: absolute;
+    /* position: absolute;
     left: 670px;
-    top: 230px;
+    top: 230px; */
     width: 164px;
     height: 7px;
     /* z-index: 109; */
