@@ -100,7 +100,7 @@ h2 {
 .before-first-main-title, .before-second-main-title {
     padding-bottom: 26px;
     font-family: 'Kaushan Script', cursive;
-    font-style: italic;
+/*     font-style: italic; */
     text-transform: none;
     font-size: 26px;
     color: #333333;
