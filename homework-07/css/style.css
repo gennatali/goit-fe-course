@@ -37,7 +37,7 @@ ul {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #222222;
@@ -53,7 +53,7 @@ ul {
 
 .title-services {
     text-align: center;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -64,7 +64,7 @@ ul {
 .subtitle {
     text-align: center;
     color: #777777;
-    font-family: serif;
+    font-family: sans-serif;
     font-style: italic;
     font-size: 18px;
     font-weight: lighter;
@@ -73,7 +73,7 @@ ul {
 
 .services-articles-title {
     text-align: center;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 18px;
     padding: 24px 0 18px 0;
@@ -81,7 +81,7 @@ ul {
 
 .services-articles-description {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 14px;
     color: #777777;
     /* padding-bottom: 18px; */
@@ -140,7 +140,7 @@ article:last-child {
 
 .title-contact {
     text-align: center;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -167,7 +167,7 @@ article:last-child {
     margin-right: 30px;
     margin-bottom: 28px;
     padding: 20px;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: #bbbbbb;
@@ -199,7 +199,7 @@ button {
     background-color: #fed136;
     border-radius: 5px;
     cursor: pointer;
-    font-family: Montserrat, serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
