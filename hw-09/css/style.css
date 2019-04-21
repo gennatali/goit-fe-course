@@ -1,0 +1,308 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.top-background {
+    background-image: url(../img/mobile-background.jpg);
+    background-size: cover;
+}
+
+/* NAVIGATION */
+.log-in, .sign, .logo {
+    /* display: block; */
+    /* text-decoration: none; */
+    cursor: pointer;
+}
+
+.log-in {
+    /* padding-right: 20px; */
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    border: 2px solid rgba(255,255,255,0);
+    padding: 10px 19px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.log-in:hover {
+    border: 2px solid rgba(255,255,255,1);
+    text-decoration: none;
+    color: #fff;
+}
+
+.sign {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    border: 2px solid rgba(255,255,255,0);
+    padding: 10px 19px;
+    border-radius: 30px;
+}
+
+.sign:hover {
+    border: 2px solid rgba(255,255,255,1);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TOP-SECTION */
+
+h1 {
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.h2-top-headline {
+    color: #ffffff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.headline-section-link {
+    display: block;
+    border: 1px solid #ff4e50;
+    background-color: #ff4e50;
+    border-radius: 30px;
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* PARTNERS SECTION */
+
+main {
+    padding-bottom: 56px;
+}
+
+.partners-headline {
+    color: #333333;
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards-names {
+    text-align: center;
+    padding: 22px 0 18px 0;
+    color: #333333;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.partners-description {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.bottom-link {
+    border: 2px solid #ff4e50;
+    border-radius: 30px;
+    text-decoration: none;
+    color:#ff4e50;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.photo-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.photo-wrapper::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.first-icon::before {
+    background-image: url(../img/tv.png);
+    background-color: #ff4e50;
+}
+
+.second-icon::before {
+    background-image: url(../img/bottle.png);
+    background-color: #ffa507;
+}
+.third-icon::before {
+    background-image: url(../img/cup.png);
+    background-color: #1cd7ad;
+}
+.fourth-icon::before {
+    background-image: url(../img/telegram.png);
+    background-color: #4e73db;
+}
+
+.first-card, .second-card, .third-card, .fourth-card {
+    width: 236px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* MEDIA-MEDIA-MEDIA-MEDIA-MEDIA */
+
+/* Малые девайсы */
+
+@media (min-width: 460px) {
+    .top-background {
+        background-image: url(../img/tablet.jpg);
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .top-background {
+        margin-bottom: 70px;
+    }
+
+    nav {
+        padding-bottom: 118px;
+        padding-top: 20px;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .logo-row {
+        padding-bottom: 38px;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    h1 {
+        padding-bottom: 20px;
+        font-size: 30px;
+        width: 294px;
+    }
+
+    .h2-top-headline {
+        padding-bottom: 20px;
+        font-size: 18px;
+        width: 228px;
+    }
+
+    .headline-section {
+        padding-bottom: 140px;
+    }
+
+    .headline-section-link {
+        padding: 12px 0;
+        width: 280px;
+    }
+
+    .partners-headline {
+        margin-bottom: 19px;
+    }
+
+    .partners-description {
+        padding-bottom: 30px;
+    }
+
+    .bottom-link {
+        padding: 12px 72px;
+    }
+
+    .cards {
+        padding-bottom: 40px;
+        /* margin: 0 auto; */
+    }
+
+}
+
+/* Средние девайсы («таблетки», >= 768px)  */
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 38px 0 152px;
+    }
+
+    h1 {
+        font-size: 52px;
+        padding-bottom: 44px;
+    }
+
+    .h2-top-headline {
+        font-size: 24px;
+        padding-bottom: 38px;
+    }
+
+    .headline-section-link {
+        padding: 12px 0;
+        width: 225px;
+    }
+
+    .headline-section {
+        padding-bottom: 234px;
+    }
+
+    .partners-headline {
+        padding: 72px 0 40px 0;
+    }
+
+    .partners-description {
+        padding: 0 12px;
+    }
+
+    .bottom-link {
+        padding: 12px 26px;
+    }
+
+    .cards {
+        padding-bottom: 40px;
+    }
+
+    .first-card {
+        margin-bottom: 57px;
+    }
+    .third-card {
+        margin-bottom: 57px;
+    }
+
+ }
+
+/* Большие девайсы (большие десктопы, >= 992px) */
+@media (min-width: 992px) {
+
+    .top-background {
+        background-image: url(../img/desktop-background.png);
+    }
+
+    h1 {
+        width: 620px;
+        padding-bottom: 44px;
+    }
+
+}
