@@ -1,0 +1,71 @@
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+
+    &__text {
+        color: $secondary-main-color;
+        font-family: $main-font-stack;
+        font-style: normal;
+        font-size: 14px;
+        padding: 26px 0;
+    }
+
+    &__link {
+        color: $secondary-main-color;
+        @extend %link;
+    }
+    
+    &__link:hover {
+        color: $orange-after-color;
+    }
+
+    &__input-button--email {
+        font-family: $second-font-stack;
+        font-style: italic;
+        font-weight: 100;
+        width: 230px;
+        height: 36px;
+        border: 1px solid $main-grey-color;
+        border-right: none;
+    }
+
+    &__input-button--subscribe {
+        width: 150px;
+        height: 40px;
+        border: none;
+        background: $blue-color;
+        color: $main-white-color;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $main-font-stack;
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    &__input-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+

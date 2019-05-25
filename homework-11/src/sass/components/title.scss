@@ -1,0 +1,28 @@
+.main-title,
+.header-section__title {
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-title::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: $orange-after-color;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+.main__subtitle,
+.team-section__subtitle {
+    font-size: 24px;
+}
+
+.main-title,
+.team-section__title {
+    font-size: 30px;
+}

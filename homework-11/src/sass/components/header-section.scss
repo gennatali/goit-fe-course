@@ -1,0 +1,38 @@
+.header-section__subtitle {
+    font-size: 72px;
+    color: $main-white-color;
+    margin: 0;
+}
+
+.header-section__title {
+    font-size: 120px;
+    color: $main-white-color;
+    padding-bottom: 122px;
+    margin: 0;
+}
+
+.header-section__link {
+    @extend %link;
+    border: 2px solid $main-white-color;
+    color: $main-white-color;
+    font-size: 14px;
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 12px 28px;
+}
+
+.header-section__link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.header-section {
+    padding-bottom: 230px;
+}

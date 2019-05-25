@@ -1,0 +1,124 @@
+.services-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            &__title {
+                padding-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                color: #333333;
+                margin: 0;
+            }
+
+            &__text {
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                color: #999999;
+                margin: 0;
+            }
+
+            &__item {
+                width: 300px;
+            }
+}
+
+.services-section__before-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 382px;
+    padding-bottom: 104px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+
+}
+
+@include generate-pseudo-icons('services-section__before-icon--', $icons, '../../images/', 'png');
+
+$icons: clock-icon,
+line-graph-icon,
+computer-icon,
+book-icon,
+home-icon,
+digital-icon;
+
+
+
+
+
+
+// &--clock::before {
+    //     background-image: url(../../images/clock-icon.png);
+    // }
+
+    // &--line-graph::before {
+    //     background-image: url(../../images/LINE-GRAPH-icon.png);
+    // }
+    
+    // &--computer::before {
+    //     background-image: url(../../images/COMPUTER-OK-icon.png);
+    // }
+    
+    // &--book::before {
+    //     background-image: url(../../images/BOOK-icon.png);
+    // }
+    
+    // &--home::before {
+    //     background-image: url(../../images/HOME-icon.png);
+    // }
+    
+    // &--digital::before {
+    //     background-image: url(../../images/digital-icon.png);
+    // }
+
+
+// @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dpx) {
+//     .services-section__before-icon--clock::before {
+//         background-image: url(../../images/clock-icon@2x.png);
+//     }
+    
+//     .services-section__before-icon--line-graph::before {
+//         background-image: url(../../images/LINE-GRAPH-icon@2x.png);
+//     }
+    
+//     .services-section__before-icon--computer::before {
+//         background-image: url(../../images/COMPUTER-OK-icon@2x.png);
+//     }
+    
+//     .services-section__before-icon--book::before {
+//         background-image: url(../../images/BOOK-icon@2x.png);
+//     }
+    
+//     .services-section__before-icon--home::before {
+//         background-image: url(../../images/HOME-icon@2x.png);
+//     }
+    
+//     .services-section__before-icon--digital::before {
+//         background-image: url(../../images/digital-icon@2x.png);
+//     }
+// }
+
+
+
+
