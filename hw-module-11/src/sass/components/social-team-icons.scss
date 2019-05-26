@@ -1,0 +1,59 @@
+.team-members__social-icons {
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+
+  &--item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgb(243, 129, 129);
+    background-color: rgb(252, 227, 138);
+    position: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &--position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translate(-5%, -490%);
+    -ms-transform: translate(-5%, -490%);
+    transform: translate(-5%, -490%);
+  }
+
+  &--item:hover {
+    background-color: #f38181;
+  }
+
+  &--item svg {
+    fill: #f38181;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: fill 0.2s linear;
+    -o-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
+  }
+
+  &--item:hover svg {
+    fill: #ffffff;
+  }
+}
+
+.team-members__photo-icon:hover>.team-members__social-icons {
+  opacity: 1;
+}

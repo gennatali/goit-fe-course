@@ -1,0 +1,61 @@
+.nav-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 490px;
+    @extend %list;
+}
+
+.nav-list__link {
+    @extend %link;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $main-font-stack;
+    font-style: normal;
+    font-weight: 400;
+    color: $main-white-color;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+    position: relative;
+    @extend %link;
+
+    &:hover,
+    &:focus {
+    color: $orange-color;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        background-color: $orange-color;
+        -webkit-transition-property: right, width;
+        -o-transition-property: right, width;
+        transition-property: right, width;
+        -webkit-transition-duration: 200ms;
+             -o-transition-duration: 200ms;
+                transition-duration: 200ms;
+        -webkit-transition-timing-function: ease-out;
+             -o-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+        position: absolute;
+        right: 100%;
+        top: 24px;
+    }
+
+    &:hover::after {
+        right: 0;
+        width: 100%;
+    }
+}
+
+
+
+
